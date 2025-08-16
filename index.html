@@ -18,10 +18,16 @@
     #t01 {
         width: 100%; 
         background-color: #13130e;
+        color: lightgray
         }
     #t02 {
         width: 100%; 
         background-color: #f1ee0e;
+        }
+    #t03 {
+        width: 100%; 
+        background-color: lightgray;
+        color: red
         }
     </style>
     
@@ -50,9 +56,20 @@
 
     </table>
 
-<p id="demo"></p>
+    <table id="t03">   
+    <tr>
+        <th>
+            <h2>I'm working on:</h2> <h1><p id="demo"></p></h1>
+        </th>
+    </tr>
+    </table>
 
 
+
+<script>
+var d = location.hostname;
+document.getElementById("demo").innerHTML = d;
+</script>
 
 
 </body>
